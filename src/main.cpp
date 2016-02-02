@@ -271,7 +271,7 @@ main (int argc, char* argv[])
     // show the sexy girl ASCII art
     // showSexyGirl();
     cout << endl;
-    // sleep(2);
+    sleep(2);
 
     // prompt turn on the goagent
     // cout << RichTxt::bold_on
@@ -387,7 +387,7 @@ main (int argc, char* argv[])
     Time current_time;
     path += "/[";
     // 1st, Date&time
-    path += current_time.getYear(4) + current_time.getMonth(2) + current_time.getDay(2);
+    path += current_time.getYear(4) + current_time.getMonth(2) + current_time.getDayInMonth(2);
     path += current_time.getHour(2) + current_time.getMinute(2) + current_time.getSecond(2);
     path += "][";
     // 2nd, av class
@@ -443,13 +443,13 @@ main (int argc, char* argv[])
     if (!cmdline_arguments_list.empty()) {
         hate_keywords_list.insert(hate_keywords_list.end(), cmdline_arguments_list.begin(), cmdline_arguments_list.end());
     }
-    cout << "  ignore some topics which include the keywords as follow \"" << RichTxt::bold_on;
-    if (hate_keywords_list.empty()) {
-        cout << "  ";
-    } else {
-        copy(hate_keywords_list.cbegin(), hate_keywords_list.cend(), ostream_iterator<const string&>(cout, ", "));
-    }
-    cout << RichTxt::bold_off << "\b\b\"; " << endl;
+    // cout << "  ignore some topics which include the keywords as follow \"" << RichTxt::bold_on;
+    // if (hate_keywords_list.empty()) {
+    //     cout << "  ";
+    // } else {
+    //     copy(hate_keywords_list.cbegin(), hate_keywords_list.cend(), ostream_iterator<const string&>(cout, ", "));
+    // }
+    // cout << RichTxt::bold_off << "\b\b\"; " << endl;
 
     // --like.
     vector<string> like_keywords_list;
