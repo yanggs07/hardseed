@@ -393,10 +393,7 @@ main (int argc, char* argv[])
 #endif
 
     // create dir
-    if (-1 == mkdir(path.c_str(), 0755)) {
-        cerr << "ERROR! cannot create " << path << ", " << strerror(errno) << endl;
-        return(EXIT_FAILURE);
-    }
+    mkdir(path.c_str(), 0755);
 
 #ifndef CYGWIN
     // convert raw path to standard absolute path. To call realpath() success,
