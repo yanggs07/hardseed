@@ -385,17 +385,6 @@ main (int argc, char* argv[])
         path = cmdline_arguments_list[0];
     }
     Time current_time;
-    path += "/[";
-    // 1st, Date&time
-    path += current_time.getYear(4) + current_time.getMonth(2) + current_time.getDayInMonth(2);
-    path += current_time.getHour(2) + current_time.getMinute(2) + current_time.getSecond(2);
-    path += "][";
-    // 2nd, av class
-    path += av_class_name;
-    path += "]";
-
-    // 3rd, range
-    path += "[" + convNumToStr(topics_range_begin) + "]";
     path += "/";
 
 #ifdef CYGWIN
