@@ -34,36 +34,36 @@ static const string g_mywebspace_color(RichTxt::bold_on + RichTxt::foreground_gr
 static void
 showSexyGirl (void)
 {
-    cout    << endl << 
-            ".================================================================." << endl << 
-          //"||                        *hardseed* vx.y.z                     ||" << endl << 
-            "||                        " << g_softname << " v" << g_version << "                      ||" << endl << 
-            "|'--------------------------------------------------------------'|" << endl << 
-            "||       -- SEX IS ZERO (0), so, who wanna be the ONE (1), aha? ||" << endl << 
-            "|'=============================================================='|" << endl << 
-            "||                                .::::.                        ||" << endl << 
-            "||                              .::::::::.                      ||" << endl << 
-            "||                              :::::::::::                     ||" << endl << 
-            "||                              ':::::::::::..                  ||" << endl << 
-            "||                              .:::::::::::::::'               ||" << endl << 
-            "||                                '::::::::::::::.`             ||" << endl << 
-            "||                                  .::::::::::::::::.'         ||" << endl << 
-            "||                                .::::::::::::..               ||" << endl << 
-            "||                              .::::::::::::::''               ||" << endl << 
-            "||                   .:::.       '::::::::''::::                ||" << endl << 
-            "||                 .::::::::.      ':::::'  '::::               ||" << endl << 
-            "||                .::::':::::::.    :::::    '::::.             ||" << endl << 
-            "||              .:::::' ':::::::::. :::::.     ':::.            ||" << endl << 
-            "||            .:::::'     ':::::::::.::::::.      '::.          ||" << endl << 
-            "||          .::::''         ':::::::::::::::'       '::.        ||" << endl << 
-            "||         .::''              '::::::::::::::'        ::..      ||" << endl << 
-            "||      ..::::                  ':::::::::::'         :'''`     ||" << endl << 
-            "||   ..''''':'                    '::::::.'                     ||" << endl << 
-            "|'=============================================================='|" << endl << 
-          //"||                                     yangyangwithgnu@yeah.net ||" << endl << 
-            "||                                     " << g_myemail_color << " ||" << endl << 
-          //"||                            http://yangyangwithgnu.github.io/ ||" << endl << 
-            "||                            " << g_mywebspace_color << " ||" << endl << 
+    cout    << endl <<
+            ".================================================================." << endl <<
+          //"||                        *hardseed* vx.y.z                     ||" << endl <<
+            "||                        " << g_softname << " v" << g_version << "                      ||" << endl <<
+            "|'--------------------------------------------------------------'|" << endl <<
+            "||       -- SEX IS ZERO (0), so, who wanna be the ONE (1), aha? ||" << endl <<
+            "|'=============================================================='|" << endl <<
+            "||                                .::::.                        ||" << endl <<
+            "||                              .::::::::.                      ||" << endl <<
+            "||                              :::::::::::                     ||" << endl <<
+            "||                              ':::::::::::..                  ||" << endl <<
+            "||                              .:::::::::::::::'               ||" << endl <<
+            "||                                '::::::::::::::.`             ||" << endl <<
+            "||                                  .::::::::::::::::.'         ||" << endl <<
+            "||                                .::::::::::::..               ||" << endl <<
+            "||                              .::::::::::::::''               ||" << endl <<
+            "||                   .:::.       '::::::::''::::                ||" << endl <<
+            "||                 .::::::::.      ':::::'  '::::               ||" << endl <<
+            "||                .::::':::::::.    :::::    '::::.             ||" << endl <<
+            "||              .:::::' ':::::::::. :::::.     ':::.            ||" << endl <<
+            "||            .:::::'     ':::::::::.::::::.      '::.          ||" << endl <<
+            "||          .::::''         ':::::::::::::::'       '::.        ||" << endl <<
+            "||         .::''              '::::::::::::::'        ::..      ||" << endl <<
+            "||      ..::::                  ':::::::::::'         :'''`     ||" << endl <<
+            "||   ..''''':'                    '::::::.'                     ||" << endl <<
+            "|'=============================================================='|" << endl <<
+          //"||                                     yangyangwithgnu@yeah.net ||" << endl <<
+            "||                                     " << g_myemail_color << " ||" << endl <<
+          //"||                            http://yangyangwithgnu.github.io/ ||" << endl <<
+            "||                            " << g_mywebspace_color << " ||" << endl <<
             "'================================================================'" << endl;
 }
 
@@ -214,41 +214,8 @@ parseTopicsRangeArgument ( const vector<string>& topicsrange_arguments_list,
 static void
 getPortalUrls (string& caoliu_portal_url, string& aicheng_portal_url)
 {
-//#ifdef CYGWIN
     caoliu_portal_url = "http://www.t66y.com/";
     aicheng_portal_url = "http://www.ac168.info/bt/";
-//#else
-    //static const string portals_file_url("https://raw.githubusercontent.com/yangyangwithgnu/hardseed/master/config/portals_list.json");
-    //Webpage portals_list_webpage(portals_file_url);
-    //if (!portals_list_webpage.isLoaded()) {
-        //cerr << "ERROR! fail to load " << portals_file_url << endl;
-        //exit(EXIT_FAILURE);
-    //}
-    //const string& portals_file_txt = portals_list_webpage.getTxt();
-
-    //string json_err_msg;
-    //const auto json_portal_urls_list = Json::parse(portals_file_txt, json_err_msg);
-    //if (!json_err_msg.empty()) {
-        //cerr << "ERROR! fail to parse the portal URLs list JSON. because "
-             //<< json_err_msg
-             //<< endl;
-        //exit(EXIT_FAILURE);
-    //}
-
-    //// caoliu 和 aicheng 论坛入口 URL 以 json 格式存放在本项目托管空间中，格式如下：
-    /*
-     * {
-     *     "caoliu": "http://cl.clme.me/",
-     *     "aicheng": "http://www.ac168.info/",
-     * }
-     */
-    //caoliu_portal_url = json_portal_urls_list["caoliu"].string_value();
-    //aicheng_portal_url = json_portal_urls_list["aicheng"].string_value();
-    //if (caoliu_portal_url.empty() || aicheng_portal_url.empty()) {
-        //cerr << "ERROR! fail to parse caoliu and aicheng portal URL. " << endl;
-        //exit(EXIT_FAILURE);
-    //}
-//#endif
 }
 
 int
@@ -274,18 +241,18 @@ main (int argc, char* argv[])
     }
 
     // show the sexy girl ASCII art
-    showSexyGirl();
+    // showSexyGirl();
     cout << endl;
     sleep(2);
 
     // prompt turn on the goagent
-    cout << RichTxt::bold_on
-         << "************************ !! IMPORTANCE !! ************************" << endl
-         << "********  please make sure the proxy program is running  *********" << endl
-         << "************************ !! IMPORTANCE !! ************************" << endl
-         << RichTxt::bold_off << endl;
+    // cout << RichTxt::bold_on
+    //      << "************************ !! IMPORTANCE !! ************************" << endl
+    //      << "********  please make sure the proxy program is running  *********" << endl
+    //      << "************************ !! IMPORTANCE !! ************************" << endl
+    //      << RichTxt::bold_off << endl;
 
-    // --av-class 
+    // --av-class
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     cout << "Your command arguments: " << endl;
     string av_class_name("caoliu_selfie");
@@ -407,13 +374,7 @@ main (int argc, char* argv[])
     // windows path style
     replace(path.begin(), path.end(), '/', '\\');
 #endif
-
-    // create dir
-    if (-1 == mkdir(path.c_str(), 0755)) {
-        cerr << "ERROR! cannot create " << path << ", " << strerror(errno) << endl;
-        return(EXIT_FAILURE);
-    }
-
+    mkdir(path.c_str(), 0755);
 #ifndef CYGWIN
     // convert raw path to standard absolute path. To call realpath() success,
     // path must have created.
@@ -448,15 +409,15 @@ main (int argc, char* argv[])
     if (!cmdline_arguments_list.empty()) {
         hate_keywords_list.insert(hate_keywords_list.end(), cmdline_arguments_list.begin(), cmdline_arguments_list.end());
     }
-    cout << "  ignore some topics which include the keywords as follow \"" << RichTxt::bold_on;
-    if (hate_keywords_list.empty()) {
-        cout << "  ";
-    } else {
-        copy(hate_keywords_list.cbegin(), hate_keywords_list.cend(), ostream_iterator<const string&>(cout, ", "));
-    }
-    cout << RichTxt::bold_off << "\b\b\"; " << endl;
+    // cout << "  ignore some topics which include the keywords as follow \"" << RichTxt::bold_on;
+    // if (hate_keywords_list.empty()) {
+    //     cout << "  ";
+    // } else {
+    //     copy(hate_keywords_list.cbegin(), hate_keywords_list.cend(), ostream_iterator<const string&>(cout, ", "));
+    // }
+    // cout << RichTxt::bold_off << "\b\b\"; " << endl;
 
-    // --like. 
+    // --like.
     vector<string> like_keywords_list;
     cmdline_arguments_list = cmdline_options.getArgumentsList("--like");
     if (!cmdline_arguments_list.empty()) {
@@ -479,7 +440,7 @@ main (int argc, char* argv[])
     cout << "  the proxy \"" << RichTxt::bold_on;
     copy(proxy_addrs_list.cbegin(), proxy_addrs_list.cend(), ostream_iterator<string>(cout, ", "));
     cout << "\b\b" << RichTxt::bold_off << "\". " << endl << endl;
-    
+
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -514,4 +475,3 @@ main (int argc, char* argv[])
     cout << endl;
     return(EXIT_SUCCESS);
 }
-

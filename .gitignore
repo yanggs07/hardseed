@@ -96,3 +96,12 @@ MANIFEST-*
 
 # ctags
 tags
+
+# Cmake
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+
+# app
+hardseed
