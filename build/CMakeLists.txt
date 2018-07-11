@@ -7,8 +7,8 @@ SET(SRC_LIST ../src/main.cpp
              ../src/lib/self/SeedWebpage.cpp ../src/lib/self/JandownSeedWebpage.cpp ../src/lib/self/RmdownSeedWebpage.cpp
              ../src/lib/self/Aicheng.cpp ../src/lib/self/Caoliu.cpp
              ../src/lib/helper/Webpage.cpp
-             ../src/lib/helper/Time.cpp ../src/lib/helper/CmdlineOption.cpp ../src/lib/helper/Misc.cpp
-             ../src/lib/3rd/json11/json11.cpp)
+             ../src/lib/helper/Time.cpp ../src/lib/helper/CmdlineOption.cpp
+             ../src/lib/helper/Misc.cpp)
 
 # linux
 #>>>>>>>>>>>>>>>>>>>>>>
@@ -21,12 +21,12 @@ SET(SRC_LIST ../src/main.cpp
 #TARGET_LINK_LIBRARIES(main curl pthread)
 
 # release
-SET(CMAKE_CXX_COMPILER "g++")
-SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
-SET(CMAKE_BUILD_TYPE release)
-ADD_EXECUTABLE(hardseed ${SRC_LIST})
-TARGET_LINK_LIBRARIES(hardseed curl pthread)
-INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
+#SET(CMAKE_CXX_COMPILER "g++")
+#SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
+#SET(CMAKE_BUILD_TYPE release)
+#ADD_EXECUTABLE(hardseed ${SRC_LIST})
+#TARGET_LINK_LIBRARIES(hardseed curl pthread)
+#INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
 
 #<<<<<<<<<<<<<<<<<<<<<<
 
@@ -47,11 +47,11 @@ INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
 ## osX
 ##>>>>>>>>>>>>>>>>>>>>>>
 
-#SET(CMAKE_CXX_COMPILER "g++")
-#SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
-#SET(CMAKE_BUILD_TYPE release)
-#ADD_EXECUTABLE(hardseed ${SRC_LIST})
-#TARGET_LINK_LIBRARIES(hardseed curl pthread iconv)
-#INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
+SET(CMAKE_CXX_COMPILER "g++")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
+SET(CMAKE_BUILD_TYPE release)
+ADD_EXECUTABLE(hardseed ${SRC_LIST})
+TARGET_LINK_LIBRARIES(hardseed curl pthread iconv)
+INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
 
 ##<<<<<<<<<<<<<<<<<<<<<<

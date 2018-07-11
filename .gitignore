@@ -1,0 +1,3 @@
+.sync-config.cson
+build/*
+!build/CMakeLists.txt
